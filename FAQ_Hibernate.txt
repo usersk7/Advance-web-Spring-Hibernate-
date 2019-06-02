@@ -1,0 +1,11 @@
+what is session factory
+jpa 
+what is orm  hibernate
+diff betn save persist
+
+
+
+
+hibernate annotatin 
+crud
+---

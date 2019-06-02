@@ -1,0 +1,153 @@
+------------------------------------------------ servlet ---------------------------------------------------
+1> what is servlet
+2> what i
+3> diff servlet context nd config
+4> why genric servlet abstract class? why we use?
+5> why httpservlet is abstract class
+6> why we should not overrride service method when we useing http servlet
+7> wht is diff include and frwd and 
+8> diff frwd and sendredirect
+9> interservlet communicatin (req.dispatcher)
+10> how to send req to another application(using requst.sentredirection)
+11> how to make  server side redirection(forwoerd) and client side redirection(sendredirect)
+
+------------------------------------------------ session ---------------------------------------------------
+http session - it is an interface  maintain session to 
+hidden  
+
+1> what is session (time betn req and resp)
+
+2> session management and diff technique
+
+3> what is deployment descripter(web.xml) 
+		ans : 	Annotaion(descript made for class/method for both programmer and compiler)
+				comments( description for programmer not for compiler);
+				how to configure servlet [eg: @webservlet]
+				- what is urlpattern(published name of servlet for which it will be re)    // complete this 
+** 4> what is load on start up( at the time of deployement , which servlet loaded first ) 
+
+5> how to mannage session timeout globally in  web appliaction 
+
+6> what is decerative approche to set session time (session config and session timeout[in minute])
+
+7> how to set error page for whole web appliaction(in web.xml using error tag)
+
+8> how to set the session time programmatically (setMaxInactiveInterval) 
+
+9> how to set ininitailzation paramerter of a servlet
+		ans : 	(@webinitparam() initparam inside [in web.xml(servlet tag paream name})
+10> how to set appliaction level ininitailzation
+
+		ans : (inside web.xml <servletcontext> inside <ini-param> )
+		
+11> diff init and init with paramerter 	 
+***		two init method I) with paramerter 
+							init(servletConfig){	super.init(config)} //explicityle
+						II) without paramerter  [ BEST PRACTICE ]
+							init(){//implicitly called super()}
+							
+
+------------------------------------------------ jsp ---------------------------------------------------							
+1> what is jsp
+		(server side web which provide ui to servlet or it extendes servlet)
+2> what is life cycle of servlet
+			
+3> why we are not able to overwrite jsp service method
+4> diff tag in jsp
+5> what are scriptletes expression declartion directives and jsp_action
+6> diff include action and include directives
+		include directives : [ directives comes in translation and compilation phas include staticfile ]
+		include action     : [ include ] 
+7> if we try to fetch request from jsp:decerative then get error
+	ans :  jsp: declartion does  not have access to implicit object
+8> what are diff predefind variable in jsp
+		--> request 
+			resp 
+			session
+			page
+			exception
+			config
+			appliaction
+			out
+			pageobject
+			
+9> without konwing java we can do jsp (jsp el , jstl)
+
+10> how to use custome tag in jsp
+		[add jar file and taglib in jsp prefix ]
+
+11> what is expression language (shorthand to notation to access java code)
+12> waht is mvc
+		mvc1(mode view controller which is page centric) jsp to jsp
+		mvc2 (dessing pattern using servlet ) jsp to servlet
+13> what is model  (hold data)
+14> what is view (present)
+15> what is controller (flow of data )
+16> what is usebean action 
+17> what is http protocol and diff method of it(get post put delete head option trace pactch connect etc.)
+
+
+------------------------------------------------ cookies ------------------------------------------------------------------------------	
+Refer this 
+https://tomcat.apache.org/tomcat-5.5-doc/servletapi/javax/servlet/http/Cookie.html
+						
+waht is cookies 
+age of cookies
+how many cookies are strored in web appliaction
+size of cookies
+type of cookie
+set age of cookie
+
+--------------------------------------------about cookie-----------------------------------------------------------
+java.lang.Object	clone() 
+          Overrides the standard java.lang.Object.clone method to return a copy of this cookie.
+ java.lang.String	getComment() 
+          Returns the comment describing the purpose of this cookie, or null if the cookie has no comment.
+ java.lang.String	getDomain() 
+          Returns the domain name set for this cookie.
+ int	getMaxAge() 
+          Returns the maximum age of the cookie, specified in seconds, By default, -1 indicating the cookie will persist until browser shutdown.
+ java.lang.String	getName() 
+          Returns the name of the cookie.
+ java.lang.String	getPath() 
+          Returns the path on the server to which the browser returns this cookie.
+ boolean	getSecure() 
+          Returns true if the browser is sending cookies only over a secure protocol, or false if the browser can send cookies using any protocol.
+ java.lang.String	getValue() 
+          Returns the value of the cookie.
+ int	getVersion() 
+          Returns the version of the protocol this cookie complies with.
+ void	setComment(java.lang.String purpose) 
+          Specifies a comment that describes a cookie's purpose.
+ void	setDomain(java.lang.String pattern) 
+          Specifies the domain within which this cookie should be presented.
+ void	setMaxAge(int expiry) 
+          Sets the maximum age of the cookie in seconds.
+ void	setPath(java.lang.String uri) 
+          Specifies a path for the cookie to which the client should return the cookie.
+ void	setSecure(boolean flag) 
+          Indicates to the browser whether the cookie should only be sent using a secure protocol, such as HTTPS or SSL.
+ void	setValue(java.lang.String newValue) 
+          Assigns a new value to a cookie after the cookie is created.
+ void	setVersion(int v) 
+          Sets the version of the cookie protocol this cookie complies with.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+
+------------------------------------------------ Introduction ------------------------------------------------------------------------------	
+Driver - convert one application called to another application who provide [e.g:usb]
+jdbc api: Java Database Connectivity  
+		 --->	which has inbuilt method for driver interface /class
+		 --->	who provide this api [ database vendor implemnted this]
+		 
+		What is Difference Between Statement Vs PreparedStatement Vs CallableStatement In Java JDBC
+		
+		CallableStatement
+				this is precompiled  statement use to call store procedure
+		PreparedStatement (this is alway faster)
+				precompiled statement use to fire dynamic query which accept the data at the runtime 
+		Statement
+				Statement are use for simple query execution
+				
+		http://javaconceptoftheday.com/statement-vs-preparedstatement-vs-callablestatement-in-java/
+		
+FAq----> why jdbc more of interface	
+		 what are diffrent 
+...............................................................................................
+What Is JDBC?
+JDBC – Java Database Connectivity API which is used by the java application to interact with the database.
+JDBC API makes java application almost independent of the database it uses.
+If your application is using JDBC API to interact with the database, then you need not to change much in your code each time you change the database of your application. You can switch easily from one database to another.
+
+JDBC API provides some sort of standardization on how to establish a connection with the database, how to send the queries to the database, how to navigate the results returned by the database and how to update a database. Java application, JDBC API and Database can be schematically represented as below.
+
+JDBC API not directly interacts with the database. It uses JDBC driver of that database to interact with the database.
+
+What Are JDBC Drivers?
+JDBC driver is a software component which is required by the JDBC API to interact with the database. Each database will have their own JDBC driver. This driver is supplied by the database vendor along with the database.
+ For example, JDBC driver of Oracle 10G is ojdbc14.jar and it will be available in Oracle installation directory at …/Oracle/app/oracle/product/10.2.0/server/jdbc/lib.
+...................................................................................................................................
+
+what is freamwork
+	--semicompleete reusable comoponant which is used to remove boiler plate code and help us to optimize application 
+	devlopment process
+
+#ORM[Object/Relational Mapping]
+
+ 
+ it is concept of Object-Relational Mapping which fouced on obj rather than table and maps the obj and its property to the 
+ specific table and its column
+ 
+ #JPA 
+	It is  Java Persistence API based on ORM concept which provides you set of inbuilt
+	interface class method to perform database opretion using ORM
+	
+	{In addition to its own "native" API, Hibernate is also an implementation of the Java Persistence API (JPA) specification.
+	As such, it can be easily used in any environment supporting JPA including Java SE applications, 
+	Java EE application servers, Enterprise OSGi containers, etc }
+ 
+ hibernet is a open source which implements JPA to perform ORM and various db opretion
+ 
+ what is dialate
+	it is used to convert sql query to hibernet queries and vice-varsa
+	
+
+  <property name="hbm2ddl.auto">create</property>
+       it will create every time new table 
+ 
+ poolsize =5; at a time 5 connection to the 
+ xml mapping
+ <mapping resource ="customer.hbm.xml"/> //xml mapping
+				or
+ <mapping class= "com.lnt.day18_hibernet.customer.model"/> //annotation mapping
+ 
+ one hibernet.cfg
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+

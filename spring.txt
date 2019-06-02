@@ -1,0 +1,49 @@
+Besfore starting fresh this 
+what is oop
+ it is a language paradigm which is based on objects and claas and which is dependes on 4 pilers 
+	-Abstraction
+	-Encapsulation
+	-Polymorphism
+	-inheritance
+	
+	objects - it is a real world entity which has 
+			- unique identity 
+			- Attribute /propertise
+			- state/behaviours
+			
+			
+			
+------------------------------------------------------------------------------------------------------------			
+Q-What is framework
+Ans: semicomplete reusable application used to optimize and ease the application devlopement 
+process by removing bolier-plate code.(repeating code in every module)
+
+
+
+Q-what is spring 
+Ans :
+	Spring is a open source, lightweight, container based DI and AOP framework.
+
+why spring 
+Ans :
+
+spring Advantages
+-spring is lightweight framework as the basic  version of spring in kbs
+
+
+what is dependency Injection 
+	-DI is a language paradigm which focus on getting the object as and when required , rether than
+	creating our own objects.it is also known as inversion of Control
+
+
+
+
+
+
+
+
+
+
+
+
+

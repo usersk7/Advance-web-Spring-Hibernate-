@@ -1,0 +1,5 @@
+create java project 011HibernateBasicXml
+2>create a customer model class
+pakage com.cdac.hibernate.model
+
+private integer customerId{}
