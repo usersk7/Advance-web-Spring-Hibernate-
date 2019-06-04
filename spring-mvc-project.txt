@@ -1,0 +1,33 @@
+							angulaer
+							spring 
+							hibernate
+
+
+
+maven
+dynamic projct
+041Spring mvc
+
+target apache 
+web.xml-->>>despacher sevlet configure with spring-servlet.xml
+
+
+spring-servlet.xml---->>>
+		annotation driven
+		base pkg
+		view 
+		prefix value 
+		suffix value jsp
+		
+		
+		
+homecontroller
+	@Request mapping(value="/")
+	public modelAndView getmodelandview();
+
+
+
+
+spring form cusstome tag
+	springForm:form  modelattribute
+
